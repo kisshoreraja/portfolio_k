@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Base styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+
+/* Contact Section Styles */
+#contact {
+    padding: 80px 0;
+    background: #e9ecef;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#contact .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    animation: slideInUp 1s ease-in-out;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    animation: slideInUp 1s ease-in-out;
+}
+
+#contact p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 40px;
+    animation: slideInUp 1s ease-in-out;
+}
+
+.contact-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    animation: slideInUp 1s ease-in-out;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    animation: slideInUp 1s ease-in-out;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    animation: slideInUp 1s ease-in-out;
+}
+
+.contact-form button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    animation: slideInUp 1s ease-in-out;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+    animation: pulse 0.3s ease-in-out;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 0 10px;
+    transition: color 0.3s, transform 0.3s;
+    animation: slideInUp 1s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Footer styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    margin-top: auto;
+    animation: fadeIn 1s ease-in-out;
+}
+
+footer p {
+    margin: 0;
+}

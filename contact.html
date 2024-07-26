@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact -MY PORTFOLIO</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Contact - My Portfolio</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="header-footer.css"> <!-- Common CSS for header and footer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="container">
             <div class="logo">
-                <img src="IMAGES/kr.jpg" class="kr">
+                <img src="IMAGES/kr.jpg" alt="Logo">
             </div>
-            <h1>MY PORTFOLIO</h1>
             <nav>
                 <ul>
-                    <li><a href="home.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -27,21 +27,33 @@
 
     <section id="contact">
         <div class="container">
-            <h2>Contact</h2>
-            <p>If you'd like to get in touch, please reach out via email at <a href="gmail.com">kisshoreraja46@gmail.com</a> or connect with me on social media.</p>
+            <h2>Contact Me</h2>
+            <p>If you have any questions or would like to get in touch, please fill out the form below or contact me through social media.</p>
+            <div class="contact-form">
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
             <div class="social-icons">
-                <a href="https://www.linkedin.com/in/kisshore-raja-291554258/"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/kisshoreraja?tab=repositories"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.instagram.com/kisshore._.14/"><i class="fa-brands fa-instagram"></i></a>
-                
+                <a href="https://www.facebook.com/yourprofile" target="_blank" class="fab fa-facebook-f"></a>
+                <a href="https://twitter.com/yourprofile" target="_blank" class="fab fa-twitter"></a>
+                <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="fab fa-linkedin-in"></a>
+                <a href="https://www.instagram.com/yourprofile" target="_blank" class="fab fa-instagram"></a>
             </div>
         </div>
     </section>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2024 MY PORTFOLIO.All Rights Reserved</p>
-        </div>
+        <p>&copy; 2024 My Portfolio. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
